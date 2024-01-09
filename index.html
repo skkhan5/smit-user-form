@@ -12,21 +12,24 @@
     <h1>User Registration Form</h1>
     <b>First Name : </b> <input type="text" placeholder="First Name"> <br><br>
     <b>Last Name :</b> <input type="text" placeholder="Last Name"> <br> <br>
-    <b>Password :</b> <input type="password" placeholder="password"> <br> <br>
+    <b>Password :</b> <input validation="password" type="password" placeholder="password"> <br> <br>
     <p> <b>Bio :</b> <textarea name="text" id="" cols="30" rows="10"></textarea></p>
     <p> 
-        Gender <br>
+        <fieldset>
+       <legend> Gender </legend> <br>
      <input type="radio" name="Gender" value="Male" checked="checked"> Male<br> 
         <input type="radio" name="Gender" value="Female"> Female<br>
         <input type="radio" name="Gender" value="othar"> Othar
+        </fieldset>
     </p>
 <br>
 <p>
-      Interests : <br>
+    <fieldset>
+     <legend> Interests :</legend> <br>
       <input type="checkbox" name="Interests" value="music" checked="checked"> Music <br>
       <input type="checkbox" name="Interests" value="sports"> Sports <br>
         <input type="checkbox" name="Interests" value="Reading" > Reading
-    
+    </fieldset>
 </p>
 <p>
    <b>Country :</b>
@@ -54,9 +57,11 @@
     <input type="date">
 </p>
 <label for="email"> <b>Email :</b></label>
-<input type="email" name="email"> <br> <br>
-<label for="website"> <b>Website :</b></label>
+<input validation="email" type="email" name="email"> <br> <br>
+<label for="website"> <b> Website :</b> </label> 
 <input type="url" name="website"> <br> <br>
+<label for="tel"> <b> Tel :</b> </label>
+<input validation="tel" type="tel"> <br> <br>
 <label for="search"> <b>  Search :</b></label>
 <input type="search"> <br> <br>
 <button type="submit" value="submit"> Submit </button>
